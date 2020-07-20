@@ -1,0 +1,40 @@
+import sys
+import os
+
+
+
+
+a = 1
+print("\ninfo-Информация")
+print("exit-Выход")
+print("start-Начать")
+print("clear-Очистить консоль")
+print("help-Помощь\n")
+while a == 1:
+    sym = str(input())
+    if sym == 'exit':
+        sys.exit()
+    elif sym == 'clear':
+        os.system('cls' if os.name == 'nt' else 'clear')
+    elif sym == 'help':
+        print("Введите 'start' и напшите символ'+,-,*,/' после введите два числа и получите результат")
+    elif sym == 'info':
+        print("Program name: calculator")
+        print("Version: 1.0")
+        print("Made: TRUING")
+        print(sys.platform)
+    elif sym == 'start':
+        sy = str(input("\nСимвол:"))
+        x = float(input("Первое число:"))
+        y = float(input("Второе число:"))
+        if sy == '+':
+            print(x + y)
+        elif sy == '-':
+            print(x - y)
+        elif sy == '*':
+            print(x * y)
+        elif sy == '/':
+            if y == 0:
+                print(Error)
+            else:
+                print(x / y)
