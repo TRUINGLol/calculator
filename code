@@ -14,7 +14,7 @@ while a == 1:
     elif sym == 'clear':
         os.system('cls' if os.name == 'nt' else 'clear')
     elif sym == 'help':
-        print("Введите 'start' и напшите символ'+,-,*,/' после введите два числа и получите результат")
+        print("Введите 'start'\n и напшите символ'+,-,*,/'\n после введите два числа и получите результат\n")
     elif sym == 'info':
         print("Program name: calculator")
         print("Version: 1.0")
@@ -35,3 +35,5 @@ while a == 1:
                 print(Error)
             else:
                 print(x / y)
+    else:
+        print("Error")
